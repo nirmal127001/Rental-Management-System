@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Rental Management System</title>
+</head>
+<body>
+	<h1 style="text-align: center; margin-top: 10px;">Rental Management System</h1>
+	<div><br>
+		<h2 style="text-align: center; margin-top: 5px; color:#DF524D";>Member Login</h2><br><br>
+		<input id="username" type="text" placeholder="Enter Username"><br><br><br><br>
+		<input id="pass" type="Password" placeholder="Enter Password"><br><br><br><br><br>
+		<button id="but" type="submit" onclick="inside();">Login</button>
+	</div>
+</body>
+<style type="text/css">
+	*
+	{
+		padding: 0;
+		margin: 0;
+	}
+	div
+	{
+		height: 380px;
+		width: 380px;
+		margin: auto;
+		margin-top: 100px;
+		background: #fff;
+		border-radius: 5px;
+        box-shadow: 0 0 5px 3px;
+	}
+	body
+	{
+		background:#DF524D;
+	}
+	#username,#pass
+	{
+	  all:unset;
+      width: 80%;
+      padding: 10px;
+      margin-left: 25px;
+	}
+	#but
+	{
+	    width: 80%;
+        padding: 10px;
+        margin-left: 25px;
+		width: 86%;
+		border: none;
+		background:#DF524D;
+		font-size: 20px;
+		border-radius: 3px;
+		text-align: center;
+	}
+	#but:hover
+	{
+		box-shadow: 2px 2px 5px #555;
+	}
+	input:not(#but)
+	{
+		 border: 0px;
+         border-bottom: 2px solid maroon;
+	}
+</style>
+<script type="text/javascript">
+	function inside()
+	{
+		var id=document.getElementById('username').value;
+		var pass=document.getElementById('pass').value;
+		if (id=="admin" && pass=="1234")
+		{
+	     
+	     alert("Access Granted")
+	     location.href = "backEnd.html";
+	     // location.href = "http://localhost/index.php";
+	    }
+	    else
+	    {
+	    	alert("Access Denied")
+	    }
+	}   
+      
+</script>
+</html>

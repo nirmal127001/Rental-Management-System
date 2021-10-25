@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Backend</title>
+</head>
+<body>
+
+<div class="card">
+  <img src="avatar1.png" alt="John" style="width:100%">
+  <h1>Welcome Admin</h1>
+  <hr>
+  <h3 style="text-align: center;">REPORT</h3>
+  <button class="but" onclick="showData();"><h2>Tenants</h2></button><br>
+  <button class="but" onclick="showRoom();"><h2>Rooms</h2></button>
+  <button class="but"><h2>Payments</h2></button>
+</div>
+<div class="nav">
+<ul>
+  <li><a class="active" href="#home">Home</a></li>
+  <li><a href="#news">Dashboard</a></li>
+  <li><a href="#contact">Report</a></li>
+  <li><a href="#about">About</a></li>  
+</ul>
+<ul>
+  
+  <li class="burger"><a onclick="insert();">ADD NEW TENANTS</a></li>
+  <li class="burger"><a onclick="room();">ADD NEW ROOM</a></li>
+  <li class="burger"><a>ROOM REPORT</a></li>
+  <li class="burger"><a>TENANT REPORT</a></li>
+  <li class="burger"><a>MY ACCOUNT</a></li>
+</ul></div>
+
+</body>
+<style type="text/css">
+	*
+	{
+		padding: 0;
+		margin: 0;
+	}
+	body
+	{
+		background:#DF524D;
+	}
+	li:not(.burger)
+	{
+		float: left;
+	}
+	li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 10px 20px;
+  font-size: 25px;
+  text-decoration: none;
+}
+.burger
+{
+  display: block;
+  color: white;
+  text-align: center;
+  padding:  15px;
+  margin: 35px;
+  font-size: 25px;
+  text-decoration: none;
+  background: black;
+}
+li a:hover{
+  background-color: #4CAF50;
+}
+	ul
+	{
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        
+        background: #DF524D;
+    }
+    .nav
+	{
+		height: 620px;
+		width: 1000px;
+		margin-left: 25px;
+		margin-top: 20px;
+		background: #fff;
+        box-shadow: 0 0 5px 2px;
+        float: left;
+        text-align: center;
+	}
+	.card 
+	{
+        height: 620px;
+		width: 300px;
+		margin-left: 15px;
+		margin-top: 20px;
+		background: #fff;
+        box-shadow: 0 0 5px 2px;
+        float: left;
+        text-align: center;
+    }
+    img
+    {
+       max-width: 200px;
+       height: 200px;
+       border-radius: 100px;
+       margin-top: 20px;
+    }
+    div
+    {
+    	float: left;
+    }
+    .but
+    {
+      width: 100%;
+      padding: 15px;
+      margin: 10px;
+      background-color: #DF524D;
+      box-shadow: 10px;
+    }
+    .but:hover
+    {
+     box-shadow: 2px 2px 5px #555;
+    }
+</style>
+<script type="text/javascript">
+  function insert()
+     {
+      location.href = "http://localhost/index.php";
+     }  
+  function showData()
+     {
+      location.href = "http://localhost/viewdata.php";
+     } 
+  function room()
+     {
+      location.href = "http://localhost/room.php";
+     } 
+     function showRoom()
+     {
+      location.href = "http://localhost/showroom.php";
+     } 
+</script>
+</html>
